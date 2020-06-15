@@ -1,8 +1,9 @@
 import Link from "next/link";
 import styles from "../styles/utils.module.css";
-import Date from "../lib/date";
+import { RelDate } from "../lib/date";
 
 export default function HomeBlogs({ posts }) {
+	console.log();
 	let showPosts = posts.map((post) => {
 		return (
 			<div key={post.id} className={styles.Post}>
@@ -12,7 +13,7 @@ export default function HomeBlogs({ posts }) {
 					</Link>
 				</h2>
 				<p className={styles.Date}>
-					<Date dateStr={post.date} />
+					<RelDate dateStr={post.date} />
 				</p>
 			</div>
 		);

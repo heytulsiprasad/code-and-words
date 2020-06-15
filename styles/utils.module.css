@@ -8,7 +8,8 @@
 	display: flex;
 	justify-content: space-between;
 	margin-top: 2.5rem;
-	font-weight: 300;
+    font-weight: 300;
+    margin-right: 10px;
 }
 
 .Profile {
@@ -70,4 +71,12 @@
 
 .AllBlogs {
 	padding: 2rem 0;
+}
+
+.NavLinks > * + * {
+	margin-left: 1rem;
+}
+
+.EachPost {
+    margin: 2rem 0;
 }

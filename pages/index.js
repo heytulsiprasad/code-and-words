@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/Layout";
-import Nav from "../components/NavBar";
+import NavBar from "../components/NavBar";
 import Profile from "../components/Profile";
 import HomeBlogs from "../components/HomeBlogs";
 import Footer from "../components/Footer";
@@ -17,7 +17,7 @@ export default function Home({ allPostsData }) {
 				<title>Awesome Blog!</title>
 			</Head>
 			<Layout>
-				<Nav page="About" />
+				<NavBar />
 				<Profile />
 				<HomeBlogs posts={allPostsData.slice(0, 2)} />
 				<Footer />
