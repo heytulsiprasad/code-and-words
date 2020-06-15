@@ -1,69 +1,73 @@
 .Container {
-    max-width: 40rem;
-    padding: 0 1rem;
-    margin: 2rem auto;
+	max-width: 40rem;
+	padding: 0 1rem;
+	margin: 2rem auto;
 }
 
 .Nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2.5rem;
-    font-weight: 300;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2.5rem;
+	font-weight: 300;
 }
 
 .Profile {
-    height: 12rem;
-    border-radius: 9999px;
-    margin: 0 auto;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+	height: 12rem;
+	border-radius: 9999px;
+	margin: 0 auto;
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .profileBox {
-    padding: 4rem 8rem 0;
-    margin: 2rem 0;
+	padding: 4rem 8rem 0;
+	margin: 2rem 0;
 }
 
 .heroName {
-    text-align: center;
-    font-size: 1.7rem;
-    padding: 1rem 4rem;
+	text-align: center;
+	font-size: 1.7rem;
+	padding: 1rem 4rem;
 }
 
 .Intro {
-    font-size: 1.1rem;
+	font-size: 1.1rem;
 }
 
 .Blogs {
-    margin: 5rem 0;
+	margin: 5rem 0;
 }
 
 .BlogHead {
-    margin-bottom: 3rem;
+	margin-bottom: 3rem;
 }
 
 .Post h2 {
-    font-size: 1.3rem;
+	font-size: 1.2rem;
 }
 
 .Date {
-    margin-top: -10px;
-    color: rgb(153, 153, 153);
+	margin-top: -10px;
+	color: rgb(153, 153, 153);
 }
 
 .Footer {
-    margin: 8rem 0 4rem;
-    text-align: center;
+	margin: 8rem 0 4rem;
+	text-align: center;
 }
 
 .Logos {
-    padding: 1rem 4rem;
+	padding: 1rem 4rem;
 }
 
-.Logos>*+* {
-    margin-left: 6px;
+.Logos > * + * {
+	margin-left: 6px;
 }
 
 .PerLogo {
-    cursor: pointer;
-    background: none;
+	cursor: pointer;
+	background: none;
+}
+
+.AllBlogs {
+	padding: 2rem 0;
 }
