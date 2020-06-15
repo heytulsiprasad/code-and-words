@@ -1,18 +1,16 @@
 {
-  "name": "heytulsiprasad",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "tailwind": "tailwindcss build styles/index.css -o styles/tailwind.generated.css",
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "^9.4.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "tailwindcss": "^1.4.6"
-  }
+	"name": "heytulsiprasad",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"next": "^9.4.4",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1"
+	}
 }

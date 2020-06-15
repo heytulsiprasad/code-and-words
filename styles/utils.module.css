@@ -1,0 +1,35 @@
+.Container {
+    max-width: 40rem;
+    padding: 0 1rem;
+    margin: 2rem auto;
+}
+
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    font-weight: 300;
+}
+
+.Profile {
+    height: 12rem;
+    border-radius: 9999px;
+    margin: 0 auto;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.profileBox {
+    padding: 4rem 8rem 0;
+    margin: 2rem 0;
+}
+
+.heroName {
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 1rem 4rem;
+}
+
+.Intro {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+}

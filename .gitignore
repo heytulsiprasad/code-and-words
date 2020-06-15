@@ -6,6 +6,3 @@ node_modules
 
 # Vercel Configs
 .vercel
-
-# Tailwind generated file
-styles/tailwind.generated.css
