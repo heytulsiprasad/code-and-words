@@ -49,3 +49,21 @@
     margin-top: -10px;
     color: rgb(153, 153, 153);
 }
+
+.Footer {
+    margin: 8rem 0 4rem;
+    text-align: center;
+}
+
+.Logos {
+    padding: 1rem 4rem;
+}
+
+.Logos>*+* {
+    margin-left: 6px;
+}
+
+.PerLogo {
+    cursor: pointer;
+    background: none;
+}

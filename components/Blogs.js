@@ -29,6 +29,11 @@ export default function Blogs() {
 				</h2>
 				<p className={styles.Date}>January 15, 2020</p>
 			</div>
+			<div style={{ marginTop: "2rem" }}>
+				<Link href="/blog">
+					<a style={{ fontWeight: "500" }}>More Posts &rarr;</a>
+				</Link>
+			</div>
 		</div>
 	);
 }

@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import Nav from "../components/NavBar";
 import Profile from "../components/Profile";
 import Blogs from "../components/Blogs";
+import Footer from "../components/Footer";
 
 import styles from "../styles/utils.module.css";
 
@@ -20,6 +21,7 @@ export default function Home() {
 				<Nav page={page} />
 				<Profile />
 				<Blogs />
+				<Footer />
 			</Layout>
 		</div>
 	);
