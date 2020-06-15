@@ -6,11 +6,14 @@ import Nav from "../components/NavBar";
 import Profile from "../components/Profile";
 import Blogs from "../components/Blogs";
 import Footer from "../components/Footer";
+import { getSortedPostData } from "../lib/posts";
 
 import styles from "../styles/utils.module.css";
 
-export default function Home() {
+export default function Home({ allPostsData }) {
 	const [page, setPage] = useState("About");
+
+	const homePosts = allPostsData.slice(0, 2);
 
 	return (
 		<div>
@@ -20,9 +23,19 @@ export default function Home() {
 			<Layout>
 				<Nav page={page} />
 				<Profile />
-				<Blogs />
+				<Blogs posts={homePosts} />
 				<Footer />
 			</Layout>
 		</div>
 	);
+}
+
+export async function getStaticProps() {
+	const allPostsData = getSortedPostData();
+	// console.log(allPostsData);
+	return {
+		props: {
+			allPostsData,
+		},
+	};
 }

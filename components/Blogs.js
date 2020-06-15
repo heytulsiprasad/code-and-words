@@ -1,34 +1,28 @@
 import Link from "next/link";
 import styles from "../styles/utils.module.css";
+import Date from "../lib/date";
 
-export default function Blogs() {
+export default function Blogs({ posts }) {
+	let showPosts = posts.map((post) => {
+		let link = post.title.split(" ").join("-");
+		return (
+			<div key={post.id} className={styles.Post}>
+				<h2>
+					<Link href={`/blogs/${link}`}>
+						<a>{post.title}</a>
+					</Link>
+				</h2>
+				<p className={styles.Date}>
+					<Date dateStr={post.date} />
+				</p>
+			</div>
+		);
+	});
+
 	return (
 		<div className={styles.Blogs}>
 			<h1 className={styles.BlogHead}>Code & Words. ☕</h1>
-			<div className={styles.Post}>
-				<h2>
-					<Link href="#">
-						<a>What is Static Generation?</a>
-					</Link>
-				</h2>
-				<p className={styles.Date}>January 15, 2020</p>
-			</div>
-			<div className={styles.Post}>
-				<h2>
-					<Link href="#">
-						<a>What is Server-side Rendering?</a>
-					</Link>
-				</h2>
-				<p className={styles.Date}>January 15, 2020</p>
-			</div>
-			<div className={styles.Post}>
-				<h2>
-					<Link href="#">
-						<a>Static Generation v.s. Server-side Rendering</a>
-					</Link>
-				</h2>
-				<p className={styles.Date}>January 15, 2020</p>
-			</div>
+			{showPosts}
 			<div style={{ marginTop: "2rem" }}>
 				<Link href="/blog">
 					<a style={{ fontWeight: "500" }}>More Posts &rarr;</a>
