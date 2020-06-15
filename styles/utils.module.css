@@ -31,5 +31,21 @@
 
 .Intro {
     font-size: 1.1rem;
-    padding: 0 1rem;
+}
+
+.Blogs {
+    margin: 5rem 0;
+}
+
+.BlogHead {
+    margin-bottom: 3rem;
+}
+
+.Post h2 {
+    font-size: 1.3rem;
+}
+
+.Date {
+    margin-top: -10px;
+    color: rgb(153, 153, 153);
 }

@@ -1,3 +1,7 @@
+:root {
+    --mainColor: #79FFE1;
+}
+
 html,
 body {
     padding: 0;
@@ -13,19 +17,22 @@ body {
 }
 
 a {
+    background:
+        linear-gradient(to bottom, var(--mainColor) 0%,
+            var(--mainColor) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
     color: #000;
     text-decoration: none;
+    transition: background-size .2s;
 }
 
 a:hover {
-    text-decoration: underline;
+    background-size: 4px 50px;
 }
 
 img {
     max-width: 100%;
     display: block;
-}
-
-*::selection {
-    background-color: #79FFE1;
 }
