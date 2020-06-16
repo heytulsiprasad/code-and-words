@@ -11,7 +11,7 @@ export default class MyDocument extends Document {
 					/>
 					<link
 						rel="shortcut icon"
-						href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/248/man-dancing_1f57a.png"
+						href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/248/hot-beverage_2615.png"
 					/>
 				</Head>
 				<body>

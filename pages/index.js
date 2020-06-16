@@ -14,7 +14,7 @@ export default function Home({ allPostsData }) {
 	return (
 		<div>
 			<Head>
-				<title>Awesome Blog!</title>
+				<title>Tulsi Prasad - Code & Words</title>
 			</Head>
 			<Layout>
 				<NavBar />

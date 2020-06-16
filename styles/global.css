@@ -16,6 +16,10 @@ body {
     box-sizing: border-box;
 }
 
+*::selection {
+    background-color: #79FFE1;
+}
+
 a {
     background:
         linear-gradient(to bottom, var(--mainColor) 0%,

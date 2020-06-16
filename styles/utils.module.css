@@ -8,20 +8,21 @@
 	display: flex;
 	justify-content: space-between;
 	margin-top: 2.5rem;
-    font-weight: 300;
-    margin-right: 10px;
+	font-weight: 300;
+	margin-right: 10px;
 }
 
 .Profile {
 	height: 12rem;
 	border-radius: 9999px;
 	margin: 0 auto;
-	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
 }
 
 .profileBox {
 	padding: 4rem 8rem 0;
 	margin: 2rem 0;
+	/* border: 1px solid red; */
 }
 
 .heroName {
@@ -60,7 +61,7 @@
 	padding: 1rem 4rem;
 }
 
-.Logos > * + * {
+.Logos>*+* {
 	margin-left: 6px;
 }
 
@@ -73,10 +74,8 @@
 	padding: 2rem 0;
 }
 
-.NavLinks > * + * {
+.NavLinks>*+* {
 	margin-left: 1rem;
 }
 
-.EachPost {
-    
-}
+.EachPost {}
