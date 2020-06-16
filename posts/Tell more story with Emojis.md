@@ -1,7 +1,6 @@
 ---
 title: "Tell more story with Emojis 🐨"
 date: "2020-04-29"
-tags: "beginners, javascript"
 ---
 
 What emojis? What story can those mere doughnut shaped icons can give to my context? They are only meant to be used to make fun of someone over chat, (mostly by using 😅). No one tells a story using emojis, do they? Then what kind of weird ass story would that be?

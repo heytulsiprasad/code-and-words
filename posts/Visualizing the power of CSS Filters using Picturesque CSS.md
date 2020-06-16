@@ -1,7 +1,6 @@
 ---
 title: "Visualizing the power of CSS Filters using Picturesque CSS"
 date: "2020-05-27"
-tags: "javascript, css, showdev"
 ---
 
 Hey folks! How you doing?

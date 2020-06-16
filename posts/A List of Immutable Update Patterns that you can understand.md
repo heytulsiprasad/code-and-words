@@ -1,7 +1,6 @@
 ---
 title: "A List of Immutable Update Patterns that you can understand "
 date: "2020-06-09"
-tags: "javascript, redux, beginners"
 ---
 
 As promised, today we will learn how to update our state immutably when there are more complex forms of data types. By now, we are all familiar with basic Redux terminology like Actions, Reducer and Store and also we looked how those things work together in the very last post. So, now comes the most awaited part which we've discussed since the beginning, returning new state immutably.

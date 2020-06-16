@@ -1,7 +1,6 @@
 ---
 title: "Learn enough Redux to get started with your projects"
 date: "2020-06-08"
-tags: "javascript, beginners, redux"
 ---
 
 Alright, as promised we'll look into some code now, but this time we'll master the most basic methods and processes that are used by Redux to manage our state efficiently, before implementing it in our FE applications.

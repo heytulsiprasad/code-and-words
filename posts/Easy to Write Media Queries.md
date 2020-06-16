@@ -1,18 +1,17 @@
 ---
 title: "Easy to Write Media Queries "
 date: "2020-04-05"
-tags: "sass, webdev, beginners, css"
 ---
 
-Hey everyone! 👋 I have finally managed to pull up some guts and courage to write and publish my first blog post. Anyways, I am ignoring all of the introduction stuff here, coz that's always available on my profile. You're more than welcome to hit me up. 
+Hey everyone! 👋 I have finally managed to pull up some guts and courage to write and publish my first blog post. Anyways, I am ignoring all of the introduction stuff here, coz that's always available on my profile. You're more than welcome to hit me up.
 
 ## 🚩 Introduction
 
-So, you're a web developer. 👩‍💻 Then you already know **writing media queries** can be *intimidating*, especially when there is a big project and there's a *lot of breakpoints*. Trust me, I know how you feel. And that's why you need a **foolproof and reliable** way of writing them, wherever and whenever you need them.
+So, you're a web developer. 👩‍💻 Then you already know **writing media queries** can be _intimidating_, especially when there is a big project and there's a _lot of breakpoints_. Trust me, I know how you feel. And that's why you need a **foolproof and reliable** way of writing them, wherever and whenever you need them.
 
 ## 👀 What do we need?
 
-Relax. This ain't rocket science. We will just use the wonderful mixins and some control directives provided to us by amazing SASS (scss) syntax. 
+Relax. This ain't rocket science. We will just use the wonderful mixins and some control directives provided to us by amazing SASS (scss) syntax.
 
 [https://camo.githubusercontent.com/c5a4f32de41e04aba6b74c2df384c3934c5e19bf/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3232323036342f313034363936342f63326265363833652d313035312d313165332d393563302d6634303164653039636262662e6a7067](https://camo.githubusercontent.com/c5a4f32de41e04aba6b74c2df384c3934c5e19bf/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3232323036342f313034363936342f63326265363833652d313035312d313165332d393563302d6634303164653039636262662e6a7067)
 
@@ -30,62 +29,66 @@ Enough of chatter let's start the fun. I'm gonna just show you how to transform 
 
 Let us begin with the `_mixins.scss` where we shall put all the nuances required for our media queries like **viewports**, **breakpoints** and some quirky scss.
 
-    // respond is the name of your mixin
-    
-    @mixin respond ($breakpoint) {
-    
-    	// $breakpoint is simply a variable that can have several values
-    
-    	@if $breakpoint==tablet {
-    
-    		// here `laptop` is the value of $breakpoint
-    		// when call laptop, we mean the following piece of code		
-    
-        @media only screen and (max-width: 600px) {
-          @content;
-        }
-      }
-      
-      @if $breakpoint==mobile {
-        @media only screen and (max-width: 480px) {
-          @content;
-        }
-      }
-    }
+```css
+// respond is the name of your mixin
+
+@mixin respond($breakpoint) {
+	// $breakpoint is simply a variable that can have several values
+
+	@if $breakpoint==tablet {
+		// here `laptop` is the value of $breakpoint
+		// when call laptop, we mean the following piece of code
+
+		@media only screen and (max-width: 600px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint==mobile {
+		@media only screen and (max-width: 480px) {
+			@content;
+		}
+	}
+}
+```
 
 Now we will use those media queries in our `_layouts.scss` file, where we are styling a `.main` class.
 
-    .main {
-    	background: red;
-      // normal styling code here
-    
-      @include respond(tablet) {
-    		background: green;
-    		// responsive code for tablet viewport i.e. 600px
-      }
-    
-    	@include respond(mobile) {
-    		background: blue;
-    		// responsive code for mobile viewport i.e. 480px	
-    	}
-    }
+```css
+.main {
+	background: red;
+	// normal styling code here
+
+	@include respond(tablet) {
+		background: green;
+		// responsive code for tablet viewport i.e. 600px
+	}
+
+	@include respond(mobile) {
+		background: blue;
+		// responsive code for mobile viewport i.e. 480px
+	}
+}
+```
 
 And that's a wrap. 🎉 This is all we need to do to write more reliable media queries and later on this code goes through your sass compiler and generates the following code. 👇
 
-    .main {
-    	background: red;
-    
-    	@media only screen and (max-width: 600px) {
-    		background: green;
-    	}
-    
-    	@media only screen and (max-width: 480px) {
-    		background: blue;
-    	}
-    }
+```css
+.main {
+	background: red;
+
+	@media only screen and (max-width: 600px) {
+		background: green;
+	}
+
+	@media only screen and (max-width: 480px) {
+		background: blue;
+	}
+}
+```
 
 ## 🙇‍♂️ Conclusion
 
-You're now a master in writing realiable CSS media queries. This will save you ton of time if used to it's maximum and will no doubt give you a less confusing way to maintain your code. **Now, it's your turn to build something wonderful using this superpower.** 
+You're now a master in writing realiable CSS media queries. This will save you ton of time if used to it's maximum and will no doubt give you a less confusing way to maintain your code. **Now, it's your turn to build something wonderful using this superpower.**
 
-***Let me know what you liked/disliked about the post down below.*** 🤩
+**_Let me know what you liked/disliked about the post down below._** 🤩

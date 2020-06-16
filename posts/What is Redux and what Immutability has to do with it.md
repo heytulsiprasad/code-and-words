@@ -1,10 +1,7 @@
 ---
 title: "What is Redux and what Immutability has to do with it?"
 date: "2020-06-07"
-tags: "redux, beginners, javascript"
 ---
-
-#
 
 Lately I was doing a project to learn more about React and in the beginning I felt very good about React's component structure and everything was going awesome with passing props to various states and I was confident that I could make anything with it.
 

@@ -1,7 +1,6 @@
 ---
 title: "Making Responsive Layouts without using Media Queries"
 date: "2020-04-16"
-tags: "beginners, design, webdev, css"
 ---
 
 Hey everyone! 👋 This has been the talk of the hour since grid and flexbox came into the world with their perky aspects of making your content flow responsively around the viewport. 📱

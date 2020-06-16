@@ -1,7 +1,6 @@
 ---
 title: "The last piece of explanation on slice vs splice"
 date: "2020-04-29"
-tags: "beginners, javascript"
 ---
 
 Hey everyone! Hope y'all doing great! I was working with some array methods recently and I can't believe myself how many times I've googled about the confusion that comes from the `splice` and `slice` methods. It's pretty obvious that they have very distinct jobs to do, but not why they have such a similar name! And more than anything, even after months of writing the same methods I end up forgetting what they mean. 

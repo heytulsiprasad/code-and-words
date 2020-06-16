@@ -1,7 +1,6 @@
 ---
 title: "The battle between Mutable and Immutable data types"
 date: "2020-06-06"
-tags: "redux, beginners, javascript"
 ---
 
 Hey fellas! I hope you're in best of mood and health to consume a quick snack of how JavaScript looks at its data types. I know it sounds like a bit out of the blue, but lately I was learning some basics of Redux and I found this pretty intimidating, so I thought to write a concise post of so.

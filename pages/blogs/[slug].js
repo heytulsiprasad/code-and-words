@@ -3,13 +3,14 @@ import Layout from "../../components/Layout";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 import { Date } from "../../lib/date";
+import ReactMarkdown from "react-markdown";
+import CodeBlock from "../../components/CodeBlock";
 
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import styles from "../../styles/utils.module.css";
 
 export default function Blog({ postContent }) {
 	let title = postContent.id.split("-").join(" ");
-	let html = postContent.contentHTML;
 
 	return (
 		<div>
@@ -25,8 +26,12 @@ export default function Blog({ postContent }) {
 						dateStr={postContent.date}
 					/>
 				</div>
-				<div className={styles.EachPost}>
-					<div dangerouslySetInnerHTML={{ __html: html }} />
+				<div style={{ margin: "2rem 0" }}>
+					<ReactMarkdown
+						source={postContent.contentMd}
+						escapeHtml={false}
+						renderers={{ code: CodeBlock }}
+					/>
 				</div>
 				<Footer />
 			</Layout>
