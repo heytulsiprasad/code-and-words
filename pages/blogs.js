@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import styles from "../styles/utils.module.css";
-import {Date} from "../lib/date";
+import { Date } from "../lib/date";
 
 import { getSortedPostData } from "../lib/posts";
 
@@ -31,7 +31,7 @@ export default function Blogs({ allPostsData }) {
 	return (
 		<div>
 			<Head>
-				<title>All Posts</title>
+				<title>Blog — Tulsi Prasad</title>
 			</Head>
 			<Layout>
 				<NavBar />

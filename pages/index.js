@@ -13,7 +13,7 @@ export default function Home({ allPostsData }) {
 	return (
 		<div>
 			<Head>
-				<title>Tulsi Prasad - Code & Words</title>
+				<title>Home — Tulsi Prasad</title>
 			</Head>
 			<Layout>
 				<NavBar />
