@@ -4,12 +4,12 @@
 	margin: 2rem auto;
 }
 
+
 .Nav {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 2.5rem;
 	font-weight: 300;
-	margin-right: 10px;
 }
 
 .Profile {
@@ -22,7 +22,6 @@
 .profileBox {
 	padding: 4rem 8rem 0;
 	margin: 2rem 0;
-	/* border: 1px solid red; */
 }
 
 .heroName {
@@ -78,4 +77,24 @@
 	margin-left: 1rem;
 }
 
-.EachPost {}
+@media (max-width: 900px) {
+	.Container {
+		padding: 0 4rem;
+	}
+
+	.profileBox {
+		padding: 4rem 0;
+	}
+}
+
+@media (max-width: 500px) {
+	.Nav {
+		min-height: 4rem;
+		flex-direction: column;
+	}
+
+	.Nav a {
+		display: inline-block;
+		width: max-content;
+	}
+}

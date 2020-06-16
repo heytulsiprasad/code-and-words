@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import Link from "next/link";
 import Layout from "../components/Layout";
 import NavBar from "../components/NavBar";
 import Profile from "../components/Profile";
