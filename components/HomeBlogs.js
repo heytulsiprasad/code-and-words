@@ -13,7 +13,7 @@ export default function HomeBlogs({ posts }) {
 					</Link>
 				</h2>
 				<p className={styles.Date}>
-					<RelDate dateStr={post.date} />
+					<RelDate dateStr={post.date} /> &bull; {post.time}
 				</p>
 			</div>
 		);
