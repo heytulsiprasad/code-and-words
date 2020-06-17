@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import { Date } from "../../lib/date";
 import ReactMarkdown from "react-markdown";
 import CodeBlock from "../../components/CodeBlock";
+import Codepen from "react-codepen-embed";
 
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import styles from "../../styles/utils.module.css";
@@ -21,16 +22,40 @@ export default function Blog({ postContent }) {
 				<NavBar />
 				<div style={{ padding: "2.5rem 0" }}>
 					<h1>{title}</h1>
-					<Date
-						style={{ color: "rgb(153, 153, 153)" }}
-						dateStr={postContent.date}
-					/>
+					<div style={{ color: "rgb(153, 153, 153)" }}>
+						<Date dateStr={postContent.date} /> &bull;{" "}
+						{postContent.time}
+					</div>
 				</div>
 				<div style={{ margin: "2rem 0" }}>
 					<ReactMarkdown
 						source={postContent.contentMd}
 						escapeHtml={false}
-						renderers={{ code: CodeBlock }}
+						renderers={{
+							code: CodeBlock,
+							link: (props) => {
+								if (props.href.includes("codepen")) {
+									return (
+										<Codepen
+											height="500"
+											hash={props.href.split("/pen")[1]}
+											user={
+												props.href
+													.split("codepen.io/")[1]
+													.split("/pen")[0]
+											}
+											loader={() => (
+												<div>Codepen Loading...</div>
+											)}
+										/>
+									);
+								}
+
+								return (
+									<a href={props.href}>{props.children}</a>
+								);
+							},
+						}}
 					/>
 				</div>
 				<Footer />
@@ -43,7 +68,6 @@ export default function Blog({ postContent }) {
 
 export async function getStaticPaths() {
 	const paths = getAllPostIds();
-	// console.log(paths);
 
 	return {
 		paths,
@@ -51,8 +75,9 @@ export async function getStaticPaths() {
 	};
 }
 
-export async function getStaticProps({ params }) {
-	const postContent = await getPostData(params.slug);
+export async function getStaticProps(context) {
+	const postContent = await getPostData(context.params.slug);
+
 	return {
 		props: {
 			postContent,

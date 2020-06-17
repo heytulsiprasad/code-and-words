@@ -13,7 +13,7 @@ Have you ever heard the phrase, **"A picture says a thousand words"**? This can'
 
 We have every rules of grammar and vastness of vocabulary to express our feelings with literature, but nothing quite compares to how much you can explain with just a round shaped icon! 😏 See.
 
-After all, its not about what you speak but how you speak, that matters. 
+After all, its not about what you speak but how you speak, that matters.
 
 ![https://cdn.statcdn.com/Infographic/images/normal/17275.jpeg](https://cdn.statcdn.com/Infographic/images/normal/17275.jpeg)
 
@@ -45,8 +45,8 @@ Almost everywhere I could say, but here are some everyday places where I use an 
 
 Before I delve into this, I want to specify there are two ways in which you can get an emoji to the web. And they are,
 
-- Through your Emoji Keyboard (or copying and pasting from emojipedia.com)
-- Through a Unicode Codepoint
+-   Through your Emoji Keyboard (or copying and pasting from emojipedia.com)
+-   Through a Unicode Codepoint
 
 Unicode is the mother of encoding and representing all the characters on earth, you've ever seen! And as Emoji is nothing but a character, you can simply use its encoding, if not the character itself.
 
@@ -70,8 +70,6 @@ We can use it for many cool purposes, I'm going to show you two of them. Hold on
 
 You can see how the emoji is added inside `content` property of the pseudo selectors in the CSS. As said, they can be put anywhere like normal characters.
 
- 
-
 [https://codepen.io/tulsi-prasad/pen/OJyWVxg](https://codepen.io/tulsi-prasad/pen/OJyWVxg)
 
 ### Cursors with Emojis
@@ -90,22 +88,22 @@ As said you can use them alike characters wherever you want, either from its cod
 
 [https://codepen.io/tulsi-prasad/pen/abvpJXa](https://codepen.io/tulsi-prasad/pen/abvpJXa)
 
-You can see in the **JS**, how we get the emoji from its codepoint. As said earlier, you can go to the unicode emoji list, but the only catch is that replace **U+** with **0x** this time. And write it like this. `String.fromCodePoint(0x1F4AA)`.  
+You can see in the **JS**, how we get the emoji from its codepoint. As said earlier, you can go to the unicode emoji list, but the only catch is that replace **U+** with **0x** this time. And write it like this. `String.fromCodePoint(0x1F4AA)`.
 
 ### Your very own Favicon
 
 To begin with, Favicons are those small icons you see beside the title of your webpage, in the tabs area. It can be anything you want, however this is how you keep an emoji as a Favicon.
 
-- Go, visit [Emojipedia](http://emojipedia.org)
-- Search and find your favourite emoji
-- Right click on your one and select **Open image in new tab**
+-   Go, visit [Emojipedia](http://emojipedia.org)
+-   Search and find your favourite emoji
+-   Right click on your one and select **Open image in new tab**
 
 ![https://i.imgur.com/MIfaFh6.png](https://i.imgur.com/MIfaFh6.png)
 
-- Copy the URL from the new tab with image
-- And paste it in your HTML in this manner (ofc, give your own href 😅)
+-   Copy the URL from the new tab with image
+-   And paste it in your HTML in this manner (ofc, give your own href 😅)
 
-    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/heart-with-arrow_1f498.png" />
+      <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/heart-with-arrow_1f498.png" />
 
 ## 🥳 Add emojis to your Git Commits
 
@@ -121,7 +119,7 @@ You can use Markdown in most places on Github, like Gists, Comments in Issues an
 
 This is a very concise guide to letting you know which emojis to add to your commit messages.
 
-[https://miro.medium.com/max/3692/0*9dJ2cGgDDZsOi0ec](https://miro.medium.com/max/3692/0*9dJ2cGgDDZsOi0ec)
+[https://miro.medium.com/max/3692/0\*9dJ2cGgDDZsOi0ec](https://miro.medium.com/max/3692/0*9dJ2cGgDDZsOi0ec)
 
 A snapshot from [https://gitmoji.carloscuesta.me/](https://gitmoji.carloscuesta.me/).
 
@@ -133,13 +131,13 @@ And this is a gist all kinds of emoji's markdown.
 
 ## Custom Emoji's on Slack and Discord 🦜
 
-Yaaaay! You can create a custom emoji and upload it to your channel by pressing **Add Emoji** from slack, and give it a name as you like. Guess what? There's a cool bunch of emoji's already on an awesome website called, **[Slackmojis](https://slackmojis.com/).** Discord, has a similar feature too. 
+Yaaaay! You can create a custom emoji and upload it to your channel by pressing **Add Emoji** from slack, and give it a name as you like. Guess what? There's a cool bunch of emoji's already on an awesome website called, **[Slackmojis](https://slackmojis.com/).** Discord, has a similar feature too.
 
 This is a comprehensive guide for adding custom emoji's, if you're stuck somehow.
 
 For [Slack](https://slack.com/intl/en-in/help/articles/206870177-Add-custom-emoji)
 
-For [Discord](https://support.discordapp.com/hc/en-us/articles/360036479811-Custom-Emojis) 
+For [Discord](https://support.discordapp.com/hc/en-us/articles/360036479811-Custom-Emojis)
 
 ![https://cnet1.cbsistatic.com/img/LW-lRpQD0Mv0-pGZzUA0wvo6wT4=/940x0/2017/02/24/876bf3a5-6158-4297-82b5-ecffe5e7cf3f/slackmojis.jpg](https://cnet1.cbsistatic.com/img/LW-lRpQD0Mv0-pGZzUA0wvo6wT4=/940x0/2017/02/24/876bf3a5-6158-4297-82b5-ecffe5e7cf3f/slackmojis.jpg)
 
@@ -151,4 +149,4 @@ Aha! Now its your turn to mess around with emojis and use them everywhere you ca
 
 Where else have you used emoij's in your workspace? 🤷‍♂️
 
-I'm always upto something, on Twitter, [@tulsiprasad22.](https://twitter.com/tulsiprasad22) Lets grab a coffee! ☕
+I'm always upto something, on Twitter, [@heytulsiprasad.](https://twitter.com/heytulsiprasad) Lets grab a coffee! ☕

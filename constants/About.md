@@ -9,7 +9,7 @@
 
 ### [Picturesque.css](https://github.com/heytulsiprasad/picturesque.css)
 
-A tool for giving your images a picture perfect look on your website, by just using CSS filters.
+A tool for giving your images a picture perfect look on your website with just using CSS filters, and exporting the code, too.
 
 ### [Foodies](https://github.com/heytulsiprasad/foodies)
 
@@ -23,19 +23,6 @@ A minimalist landing page for a fictional company, empowered with React.
 
 ## Experience
 
-### Writing
-
--   [The Dev Community](https://dev.to/heytulsiprasad)
-    -   Posts about things I learn each week
-    -   Helping people in not making the same mistakes, as me
-
-### Society
-
--   [GDG Bhubaneswar](https://www.meetup.com/GDG-Bhubaneswar/)
--   [Zairza, CET-B](https://zairza.in/)
-
-## Technologies
-
 -   JavaScript (ES6)
 -   React.js
 -   Next.js
@@ -44,11 +31,11 @@ A minimalist landing page for a fictional company, empowered with React.
 
 ## Links
 
--   Email: [tulsi.prasad50@gmail.com](mailto:tulsi.prasad50@gmail.com)
--   Twitter: [@heytulsiprasad](https://twitter.com/heytulsiprasad)
--   GitHub: [@heytulsiprasad](https://github.com/heytulsiprasad)
--   LinkedIn: [Tulsi Prasad](https://linkedin.com/in/heytulsiprasad)
--   Website: [heytulsiprasad.co]()
+-   **Email**: [tulsi.prasad50@gmail.com](mailto:tulsi.prasad50@gmail.com)
+-   **Twitter**: [@heytulsiprasad](https://twitter.com/heytulsiprasad)
+-   **GitHub**: [@heytulsiprasad](https://github.com/heytulsiprasad)
+-   **LinkedIn**: [Tulsi Prasad](https://linkedin.com/in/heytulsiprasad)
+-   **Website**: [heytulsiprasad.vercel.app](#)
 
 ## Footnotes
 

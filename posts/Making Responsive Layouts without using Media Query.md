@@ -21,7 +21,7 @@ Well, that's an open question. I won't walk you through building the next Twitte
 
 ![https://miro.medium.com/max/1000/1*QBDYhcaeVfJ4bfaqCZZXTw.png](https://miro.medium.com/max/1000/1*QBDYhcaeVfJ4bfaqCZZXTw.png)
 
-I want you to have a basic knowledge of `flex` and/or `grid` for this, or even the idea of what they are or how they work. You can always come back here after having an idea. 
+I want you to have a basic knowledge of `flex` and/or `grid` for this, or even the idea of what they are or how they work. You can always come back here after having an idea.
 
 # 🕸 Let's Get on Grid.
 
@@ -43,7 +43,7 @@ Ofcourse, there are some additional styling here required to achieve this, but I
 
 ### 🐒 Why `auto-fit` everytime?
 
-Huh, it's not much everytime, but there is also one property called `**auto-fill**` which you can use according to your requirements. 
+Huh, it's not much everytime, but there is also one property called `**auto-fill**` which you can use according to your requirements.
 
 ![https://i.imgur.com/M6PblHQ.gif](https://i.imgur.com/M6PblHQ.gif)
 
@@ -57,7 +57,7 @@ Further reading on this down below.
 
 # ⚡ Let's get to Flex
 
-Flexbox are the one dimensional containers which can prove quite amazing for layouts that only need flow in one direction. So it definitely fits into our use case. 
+Flexbox are the one dimensional containers which can prove quite amazing for layouts that only need flow in one direction. So it definitely fits into our use case.
 
 **PS:** Although the key here isn't making the whole webpage responsive without using even one media query but even if it does make a single section of the page responsive it's worth it.
 
@@ -65,7 +65,7 @@ Flexbox are the one dimensional containers which can prove quite amazing for lay
 
 ### ✨ The Amazing `flex-wrap` Property
 
-This is **the** line, that makes everything as it should be. So, `flex-wrap` is a property described on flex containers that decides whether the flex items are forced to stay in a single line or can be flown to multiple lines, *i.e. responsive style. 🌠*
+This is **the** line, that makes everything as it should be. So, `flex-wrap` is a property described on flex containers that decides whether the flex items are forced to stay in a single line or can be flown to multiple lines, _i.e. responsive style. 🌠_
 
 ![https://i.imgur.com/ETVqh7M.png](https://i.imgur.com/ETVqh7M.png)
 
@@ -81,9 +81,9 @@ Yep. You have learned the concepts behind making awesome layouts. You can start 
 
 # 📚 Further Reading
 
-- [Fill or Fit? What’s the difference?](https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/), by CSS Tricks
-- [Flex Wrap](https://css-tricks.com/almanac/properties/f/flex-wrap/), by CSS Tricks
-- I strongly recommend watching the channel, [Layout Lands](https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag) by Jen Simmons.
-- [Realizing Common Layouts using CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Realizing_common_layouts_using_CSS_Grid_Layout), by MDN Docs
+-   [Fill or Fit? What’s the difference?](https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/), by CSS Tricks
+-   [Flex Wrap](https://css-tricks.com/almanac/properties/f/flex-wrap/), by CSS Tricks
+-   I strongly recommend watching the channel, [Layout Lands](https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag) by Jen Simmons.
+-   [Realizing Common Layouts using CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Realizing_common_layouts_using_CSS_Grid_Layout), by MDN Docs
 
-**I'm a lot cooler on Twitter, [@tulsiprasad22](https://twitter.com/tulsiprasad22). Let's hang out. 🎉🏖**
+**I'm a lot cooler on Twitter, [@heytulsiprasad](https://twitter.com/heytulsiprasad). Let's hang out. 🎉🏖**

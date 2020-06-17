@@ -5,7 +5,6 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import styles from "../styles/utils.module.css";
 import { Date } from "../lib/date";
-
 import { getSortedPostData } from "../lib/posts";
 
 export default function Blogs({ allPostsData }) {
@@ -22,7 +21,7 @@ export default function Blogs({ allPostsData }) {
 					</Link>
 				</h2>
 				<p className={styles.Date}>
-					<Date dateStr={post.date} />
+					<Date dateStr={post.date} /> &bull; {post.time}
 				</p>
 			</div>
 		);
@@ -49,7 +48,6 @@ export default function Blogs({ allPostsData }) {
 
 export async function getStaticProps() {
 	const allPostsData = getSortedPostData();
-	// console.log(allPostsDate);
 
 	return {
 		props: {

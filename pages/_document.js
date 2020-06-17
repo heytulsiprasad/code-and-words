@@ -17,6 +17,10 @@ export default class MyDocument extends Document {
 				<body>
 					<Main />
 					<NextScript />
+					<script
+						async
+						src="https://static.codepen.io/assets/embed/ei.js"
+					></script>
 				</body>
 			</Html>
 		);
