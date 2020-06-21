@@ -19,10 +19,11 @@ export default function Profile() {
 			</div>
 			<div className={styles.Intro}>
 				<p>
-					Hello, I'm <a href="#">Tulsi</a>. I'm a web software
-					developer and engineer by passion. I live in{" "}
-					<strong>India</strong>. I learn by making (and breaking)
-					things. I sleep at day sometimes and write code and words.
+					Hello, I'm <a href="#">Tulsi</a>. I'm a{" "}
+					<strong>web software developer</strong> and engineer by
+					passion. I live in <strong>India</strong>. I learn by making
+					(and breaking) things. I sleep at night sometimes and write
+					code and words.
 				</p>
 			</div>
 		</Fragment>
