@@ -35,7 +35,7 @@ A minimalist landing page for a fictional company, empowered with React.
 -   **Twitter**: [@heytulsiprasad](https://twitter.com/heytulsiprasad)
 -   **GitHub**: [@heytulsiprasad](https://github.com/heytulsiprasad)
 -   **LinkedIn**: [Tulsi Prasad](https://linkedin.com/in/heytulsiprasad)
--   **Website**: [heytulsiprasad.vercel.app](#)
+-   **Website**: [heytulsiprasad.now.sh](#)
 
 ## Footnotes
 

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../styles/utils.module.css";
+import styles from "../styles/utils.module.scss";
 import { twitter } from "../constants/Socials";
 
 export default function NavBar() {

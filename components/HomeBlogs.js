@@ -1,12 +1,11 @@
 import Link from "next/link";
-import styles from "../styles/utils.module.css";
+import styles from "../styles/utils.module.scss";
 import { RelDate } from "../lib/date";
 
 export default function HomeBlogs({ posts }) {
-	console.log();
 	let showPosts = posts.map((post) => {
 		return (
-			<div key={post.id} className={styles.Post}>
+			<div key={post.id} className={styles.PostHome}>
 				<h2>
 					<Link href="/blogs/[slug]" as={`/blogs/${post.id}`}>
 						<a>{post.title}</a>
@@ -21,11 +20,11 @@ export default function HomeBlogs({ posts }) {
 
 	return (
 		<div className={styles.Blogs}>
-			<h1 className={styles.BlogHead}>Code & Words. ☕</h1>
+			<h1 className={styles.HomeBlogName}>Code & Words. ☕</h1>
 			{showPosts}
-			<div style={{ marginTop: "2rem" }}>
+			<div className={styles.AllPosts}>
 				<Link href="/blogs">
-					<a style={{ fontWeight: "500" }}>More Posts &rarr;</a>
+					<a>More Posts &rarr;</a>
 				</Link>
 			</div>
 		</div>

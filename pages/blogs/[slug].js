@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../../components/Layout";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
@@ -8,7 +9,7 @@ import CodeBlock from "../../components/CodeBlock";
 import Codepen from "react-codepen-embed";
 
 import { getAllPostIds, getPostData } from "../../lib/posts";
-import styles from "../../styles/utils.module.css";
+import styles from "../../styles/utils.module.scss";
 
 export default function Blog({ postContent }) {
 	let title = postContent.id.split("-").join(" ");
@@ -22,13 +23,16 @@ export default function Blog({ postContent }) {
 				<NavBar />
 				<div style={{ padding: "2.5rem 0" }}>
 					<h1>{title}</h1>
-					<div style={{ color: "rgb(153, 153, 153)" }}>
+					<div
+						className={styles.BlogDate}
+					>
 						<Date dateStr={postContent.date} /> &bull;{" "}
 						{postContent.time}
 					</div>
 				</div>
 				<div style={{ margin: "2rem 0" }}>
 					<ReactMarkdown
+						className={styles.BlogContent}
 						source={postContent.contentMd}
 						escapeHtml={false}
 						renderers={{
@@ -57,6 +61,13 @@ export default function Blog({ postContent }) {
 							},
 						}}
 					/>
+					<div className={styles.MorePosts}>
+						<Link href="/blogs">
+							<a style={{ fontWeight: "500" }}>
+								&larr; All Posts
+							</a>
+						</Link>
+					</div>
 				</div>
 				<Footer />
 			</Layout>

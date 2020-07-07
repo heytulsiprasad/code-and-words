@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../styles/utils.module.css";
+import styles from "../styles/utils.module.scss";
 import { Twitter, GitHub, LinkedIn, Mail } from "../lib/Icons";
 import { twitter, github, mail, linkedin } from "../constants/Socials";
 
