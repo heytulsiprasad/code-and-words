@@ -3,18 +3,14 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import styles from "../styles/utils.module.css";
+import styles from "../styles/utils.module.scss";
 import { Date } from "../lib/date";
 import { getSortedPostData } from "../lib/posts";
 
 export default function Blogs({ allPostsData }) {
 	let posts = allPostsData.map((post) => {
 		return (
-			<div
-				key={post.id}
-				className={styles.Post}
-				style={{ margin: "1.25rem 0" }}
-			>
+			<div key={post.id} className={styles.PostBlog}>
 				<h2>
 					<Link href="/blogs/[slug]" as={`/blogs/${post.id}`}>
 						<a>{post.title}</a>
@@ -35,9 +31,7 @@ export default function Blogs({ allPostsData }) {
 			<Layout>
 				<NavBar />
 				<div className={styles.AllBlogs}>
-					<h1 style={{ padding: "2rem 0", fontSize: "3rem" }}>
-						Code and Words. ☕
-					</h1>
+					<h1 className={styles.BlogName}>Code and Words. ☕</h1>
 					{posts}
 				</div>
 				<Footer />

@@ -1,0 +1,26 @@
+@mixin respond ($breakpoint) {
+
+	@if $breakpoint==tablet {
+		@media only screen and (max-width: 900px) {
+			@content;
+		}
+    }
+    
+    @if $breakpoint==tabmini {
+        @media only screen and (max-width: 650px) {
+            @content;
+        }
+    }
+
+	@if $breakpoint==moblarge {
+		@media only screen and (max-width: 500px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint==mobsmall {
+		@media only screen and (max-width: 400px) {
+			@content;
+		}
+	}
+}

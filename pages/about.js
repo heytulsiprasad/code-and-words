@@ -3,7 +3,7 @@ import Head from "next/head";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
-import styles from "../styles/utils.module.css";
+import styles from "../styles/utils.module.scss";
 import ReactMarkdown from "react-markdown";
 
 import { getAbout } from "../lib/about";
@@ -27,7 +27,7 @@ export default function About({ about }) {
 					</Link>
 				</div>
 				<div style={{ marginTop: "5rem" }}>
-					<ReactMarkdown source={about} />
+					<ReactMarkdown className={styles.AboutBody} source={about} />
 				</div>
 				<Footer />
 			</Layout>

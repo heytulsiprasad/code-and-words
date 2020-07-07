@@ -18,6 +18,7 @@
 		"react-dom": "^16.13.1",
 		"react-markdown": "^4.3.1",
 		"react-syntax-highlighter": "^12.2.1",
-		"reading-time": "^1.2.0"
+		"reading-time": "^1.2.0",
+		"sass": "^1.26.10"
 	}
 }

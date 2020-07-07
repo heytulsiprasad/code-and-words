@@ -7,7 +7,7 @@ import HomeBlogs from "../components/HomeBlogs";
 import Footer from "../components/Footer";
 import { getSortedPostData } from "../lib/posts";
 
-import styles from "../styles/utils.module.css";
+import styles from "../styles/utils.module.scss";
 
 export default function Home({ allPostsData }) {
 	return (

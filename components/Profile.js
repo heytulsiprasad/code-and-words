@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import Link from "next/link";
-import styles from "../styles/utils.module.css";
+import styles from "../styles/utils.module.scss";
 
 export default function Profile() {
 	return (

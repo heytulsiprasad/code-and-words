@@ -1,0 +1,239 @@
+@import "./mixins.scss";
+
+.Container {
+	max-width: 40rem;
+	padding: 0 1rem;
+	margin: 2rem auto;
+
+	@include respond(tablet) {
+		padding: 0 4rem;
+	}
+
+	@include respond(tabmini) {
+		padding: 0 3rem;
+	}
+
+	@include respond(moblarge) {
+		padding: 0 2rem;
+	}
+
+	@include respond(moblarge) {
+		padding: 0 1.5rem;
+	}
+}
+
+.Nav {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2.5rem;
+	font-weight: 300;
+
+	@include respond(moblarge) {
+		min-height: 4rem;
+		flex-direction: column;
+
+		a {
+			display: inline-block;
+			width: max-content;
+		}
+	}
+}
+
+.Profile {
+	height: 12rem;
+	border-radius: 9999px;
+	margin: 0 auto;
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+
+	@include respond(mobsmall) {
+		height: auto;
+	}
+}
+
+.profileBox {
+	padding: 4rem 8rem 0;
+	margin: 2rem 0 0;
+
+	@include respond(tablet) {
+		padding: 4rem 0;
+	}
+
+	@include respond(moblarge) {
+		padding: 4rem 0 1rem;
+	}
+
+	@include respond(mobsmall) {
+		padding: 4rem 1rem 1rem;
+	}
+}
+
+.heroName {
+	text-align: center;
+	font-size: 1.7rem;
+	padding: 1rem 4rem;
+
+	@include respond(moblarge) {
+		padding: 1rem 0;
+	}
+
+	@include respond(mobsmall) {
+		font-size: 1.4rem;
+	}
+}
+
+.Intro {
+	font-size: 1.1rem;
+
+	@include respond(moblarge) {
+		font-size: 1rem;
+	}
+}
+
+.Blogs {
+	margin: 5rem 0;
+}
+
+.MorePosts {
+	margin-top: 2rem;
+}
+
+.AllPosts {
+	margin-top: 3rem;
+
+	a {
+		font-weight: 400;
+		font-style: italic;
+	}
+}
+
+.HomeBlogName {
+	margin-bottom: 4rem;
+	font-weight: 900;
+	font-size: 2.4rem;
+
+	@include respond(moblarge) {
+		font-size: 2rem;
+	}
+
+	@include respond(mobsmall) {
+		font-size: 1.7rem;
+	}
+}
+
+.PostHome {
+	h2 {
+		font-size: 1.1rem;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 2.5rem;
+	}
+}
+
+.PostBlog {
+	h2 {
+		font-size: 1.2rem;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+
+	@include respond(moblarge) {
+		h2 {
+			font-size: 1.1rem;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 2.5rem;
+		}
+	}
+
+	@include respond(mobsmall) {
+		h2 {
+			font-size: 1rem;
+		}
+
+		p {
+			font-size: .8rem;
+		}
+	}
+}
+
+// Date on home page
+.Date {
+	margin-top: -10px;
+	color: rgb(153, 153, 153);
+	font-size: .9rem;
+	font-style: italic;
+}
+
+// Date on each blog page
+.BlogDate {
+	color: rgb(153, 153, 153);
+	font-size: 1rem;
+}
+
+.Footer {
+	margin: 8rem 0 4rem;
+	text-align: center;
+}
+
+.Logos {
+	padding: 1rem 4rem;
+
+	@include respond(moblarge) {
+		padding: 1rem 0;
+	}
+}
+
+.Logos>*+* {
+	margin-left: 6px;
+}
+
+.PerLogo {
+	cursor: pointer;
+	background: none;
+}
+
+.AllBlogs {
+	padding: 2rem 0;
+}
+
+// `Code and Words` written in the /blogs page
+.BlogName {
+	padding: 2rem 0;
+	font-size: 3rem;
+
+	@include respond(moblarge) {
+		font-size: 2.5rem;
+	}
+}
+
+.NavLinks>*+* {
+	margin-left: 1rem;
+}
+
+.AboutBody {
+	@include respond(moblarge) {
+		font-size: .9rem;
+	}
+
+	@include respond(mobsmall) {
+		font-size: .85rem;
+	}
+}
+
+.BlogContent {
+	@include respond(tabmini) {
+		font-size: .95rem;
+	}
+
+	@include respond(moblarge) {
+		font-size: .9rem;
+	}
+
+	@include respond(mobsmall) {
+		font-size: .85rem;
+	}
+}
