@@ -23,14 +23,12 @@ export default function Blog({ postContent }) {
 				<NavBar />
 				<div style={{ padding: "2.5rem 0" }}>
 					<h1>{title}</h1>
-					<div
-						className={styles.BlogDate}
-					>
+					<div className={styles.BlogDate}>
 						<Date dateStr={postContent.date} /> &bull;{" "}
 						{postContent.time}
 					</div>
 				</div>
-				<div style={{ margin: "2rem 0" }}>
+				<div className={styles.BlogContainer}>
 					<ReactMarkdown
 						className={styles.BlogContent}
 						source={postContent.contentMd}
@@ -76,7 +74,7 @@ export default function Blog({ postContent }) {
 }
 
 // We shall just return which all routes can possibly render this
-
+// getAllPostIds fetch all the filenames from posts/ folder so we make them as routes
 export async function getStaticPaths() {
 	const paths = getAllPostIds();
 
@@ -86,6 +84,13 @@ export async function getStaticPaths() {
 	};
 }
 
+// whatever this function returns is automatically passed as a prop
+// to our main page function above
+
+/*
+- context parameter contains `params` property which contains the route parameters for pages using dynamic routes.
+- For example, if the page name is [id].js , then params will look like { id: ... }.
+*/
 export async function getStaticProps(context) {
 	const postContent = await getPostData(context.params.slug);
 
