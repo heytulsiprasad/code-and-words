@@ -30,7 +30,7 @@ The dependencies that we are going to install (as devDependencies) are,
 
 So, `npm install node-sass concat autoprefixer postcss-cli npm-run-all --save-dev`. Let's now write some scripts that'll execute our process.
 
-[https://lh3.googleusercontent.com/proxy/GfUuINVyqc0ef52oCb1vBYqYYg73ZY_B_upNkT0-RBTWFQ8KixeoHrQ71RWqWWhbY45ruBmfc3S4JGgH1ml2dJOfx7pYtrnQJPWXvn-OuLjVrCnBzK0tBhaadmjenIN5jq_qW1L2k-X7jlpQV52ZgoG3KCoKCJJ6v1s](https://lh3.googleusercontent.com/proxy/GfUuINVyqc0ef52oCb1vBYqYYg73ZY_B_upNkT0-RBTWFQ8KixeoHrQ71RWqWWhbY45ruBmfc3S4JGgH1ml2dJOfx7pYtrnQJPWXvn-OuLjVrCnBzK0tBhaadmjenIN5jq_qW1L2k-X7jlpQV52ZgoG3KCoKCJJ6v1s)
+![https://lh3.googleusercontent.com/proxy/GfUuINVyqc0ef52oCb1vBYqYYg73ZY_B_upNkT0-RBTWFQ8KixeoHrQ71RWqWWhbY45ruBmfc3S4JGgH1ml2dJOfx7pYtrnQJPWXvn-OuLjVrCnBzK0tBhaadmjenIN5jq_qW1L2k-X7jlpQV52ZgoG3KCoKCJJ6v1s](https://lh3.googleusercontent.com/proxy/GfUuINVyqc0ef52oCb1vBYqYYg73ZY_B_upNkT0-RBTWFQ8KixeoHrQ71RWqWWhbY45ruBmfc3S4JGgH1ml2dJOfx7pYtrnQJPWXvn-OuLjVrCnBzK0tBhaadmjenIN5jq_qW1L2k-X7jlpQV52ZgoG3KCoKCJJ6v1s)
 
 ## 👨‍💻 Writing Scripts to Execute
 
@@ -73,7 +73,7 @@ If you have your css in more than one file, then you'd probably want to combine 
 
 **P.S.:** If you have just one file this step doesn't make any sense. So skip, but make sure your keep **track of the trail** i.e. _which file is returned from which step and which one is being put_.
 
-### 3️⃣ \*pre**fix:css\***
+### 3️⃣ **prefix:css**
 
 This is the command with which your css is going to have vendor prefixes like `-webkit-`, `-moz`, `-ms-` and `-o-`, which otherwise you'd have to add manually.
 

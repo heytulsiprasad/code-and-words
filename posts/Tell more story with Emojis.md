@@ -119,13 +119,12 @@ You can use Markdown in most places on Github, like Gists, Comments in Issues an
 
 This is a very concise guide to letting you know which emojis to add to your commit messages.
 
-[https://miro.medium.com/max/3692/0\*9dJ2cGgDDZsOi0ec](https://miro.medium.com/max/3692/0*9dJ2cGgDDZsOi0ec)
-
-A snapshot from [https://gitmoji.carloscuesta.me/](https://gitmoji.carloscuesta.me/).
+![https://res.cloudinary.com/practicaldev/image/fetch/s--UYW14KOX--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/3692/0%2A9dJ2cGgDDZsOi0ec](https://res.cloudinary.com/practicaldev/image/fetch/s--UYW14KOX--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/3692/0%2A9dJ2cGgDDZsOi0ec)
+A snapshot from [gitmoji](https://gitmoji.carloscuesta.me/).
 
 And this is a gist all kinds of emoji's markdown.
 
-[https://gist.github.com/rxaviers/7360908](https://gist.github.com/rxaviers/7360908)
+[Emoji's Markdown](https://gist.github.com/rxaviers/7360908)
 
 **Last but not the least,**
 

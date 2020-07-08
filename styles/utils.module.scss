@@ -17,7 +17,7 @@
 		padding: 0 2rem;
 	}
 
-	@include respond(moblarge) {
+	@include respond(mobsmall) {
 		padding: 0 1.5rem;
 	}
 }
@@ -155,7 +155,7 @@
 		}
 
 		p {
-			font-size: .8rem;
+			font-size: 0.8rem;
 		}
 	}
 }
@@ -164,7 +164,7 @@
 .Date {
 	margin-top: -10px;
 	color: rgb(153, 153, 153);
-	font-size: .9rem;
+	font-size: 0.9rem;
 	font-style: italic;
 }
 
@@ -187,7 +187,7 @@
 	}
 }
 
-.Logos>*+* {
+.Logos > * + * {
 	margin-left: 6px;
 }
 
@@ -210,30 +210,40 @@
 	}
 }
 
-.NavLinks>*+* {
+.NavLinks > * + * {
 	margin-left: 1rem;
 }
 
 .AboutBody {
 	@include respond(moblarge) {
-		font-size: .9rem;
+		font-size: 0.9rem;
 	}
 
 	@include respond(mobsmall) {
-		font-size: .85rem;
+		font-size: 0.85rem;
 	}
 }
 
 .BlogContent {
+	* {
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		hyphens: auto;
+	}
+
 	@include respond(tabmini) {
-		font-size: .95rem;
+		font-size: 0.95rem;
 	}
 
 	@include respond(moblarge) {
-		font-size: .9rem;
+		font-size: 0.9rem;
 	}
 
 	@include respond(mobsmall) {
-		font-size: .85rem;
+		font-size: 0.8rem;
 	}
+}
+
+.BlogContainer {
+	margin: 2rem 0;
 }
